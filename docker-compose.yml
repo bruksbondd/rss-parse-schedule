@@ -1,0 +1,14 @@
+services:
+  client:
+    image: admin-ui
+    ports:
+      - 3000:3000
+  server: 
+    image: rss-parser-schedule
+    ports: 
+      - 8000:8000
+    environment:
+            - PORT=8000
+            - JWT_SECRET='fdwelifeuhu&UHT'
+            - DATABASE_MONGO=mongodb+srv://bruks7777777:R6rabFhLTEluckv4@rss-parser.ralyc35.mongodb.net/?retryWrites=true&w=majority&appName=rss-parser
+            - RSS_FEED='https://lifehacker.com/rss'
