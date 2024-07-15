@@ -13,7 +13,7 @@ $ make up
 The application will be launched at http://localhost:3000/
 
 ## Get access
-1. Login: admin; password: qwerty;
+Login: admin; password: qwerty;
 
 4. Remove containers
 ```sh
